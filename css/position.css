@@ -1,0 +1,51 @@
+.rel{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    height: 25vh;
+    width: 25vw;
+    background-color: aquamarine;   
+}
+/* la position relative permet de positionner un élément relativement à son emplacement de départ */
+
+.abs{
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 12px;
+    background-color: blue;
+    height: 12vh;
+    width: 12vw;
+}
+/* la position absolute permet de positionner un élément de maniére fixe dans un contenuer relatif s*/
+
+.stat{
+    background-color: hotpink;
+    height: 20vh;
+    width: 20vw;
+}
+/* la position statik est me position par défaut de chaque élément placé dans le document*/
+
+.stick{
+    position: sticky; /* barr nav */
+    top: 0;
+    width: 30vw;
+    height: 30vh;
+    background-color: forestgreen;
+}
+/* la position sticky permet a l'élement de rester positionné en fonction du scroll de l'utilisateur */
+
+.fix{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    height: 200vh;
+    width: 10vw;
+    background-color: midnightblue;
+}
+
+body{
+    height: 400vh;
+}

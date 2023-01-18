@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+  
+}
+
+
+/* HEADER  */
+
+
+.conteneur {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);/* je fait donc 5 colonnes avec une largeur de 1fr unité de mesure */
+    grid-template-rows: repeat(5, 1fr); /* je fait donc 5 lignes avec une largeur de 1fr unité de mesure */
+    grid-column-gap: 0px; /* espaces entre mes colonnes */
+    grid-row-gap: 0px; /* espaces entre mes lignes */
+  
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 1 / 5 / 2 / 6; }
+    .div3 { grid-area: 1 / 1 / 2 / 2; } 
+
+.div1{
+   background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div1 h2{
+  color: aliceblue;
+     
+ }
+
+
+
+.div2{
+   background-color: aqua;
+    width: 20vw;
+    height: 20vh;
+    display: flex;   
+   justify-content: center;/* ici je me sert de l'attribut "justify-content: centerpour mettre mon texte ou image au centre aux niveux de mon axe principal*/ 
+   align-items: center; /* ici je me sert de l'attribut "align-items: center pour mettre mon texte ou image au centre aux niveux de chacque coté de ma div*/ 
+   
+}
+
+.div3{
+    background-color: rgb(158, 251, 36);
+     width: 20vw;
+     height: 20vh;
+     display: flex;   
+    justify-content: center;/* ici je me sert de l'attribut "justify-content: centerpour mettre mon texte ou image au centre aux niveux de mon axe principal*/ 
+    align-items: center; /* ici je me sert de l'attribut "align-items: center pour mettre mon texte ou image au centre aux niveux de chacque coté de ma div*/ 
+    
+ }
+ 
+
+
+ /*   FOOTER   */
+
+
+ .conteneur2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    }
+    
+    .div4 { grid-area: 5 / 1 / 6 / 6; }
+    .div5 { grid-area: 5 / 1 / 6 / 2; }
+    .div6 { grid-area: 5 / 5 / 6 / 6; } 
+
+    
+.div4{
+    background-color: black;
+     width: 100%;
+     height: 20vh;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+     
+ }
+.div4 h2{
+    color: aliceblue;
+}
+
+ .div5{
+    background-color: aqua;
+     width: 20vw;
+     height: 20vh;
+     display: flex;  
+     flex-wrap: nowrap; 
+    justify-content: center;/* ici je me sert de l'attribut "justify-content: centerpour mettre mon texte ou image au centre aux niveux de mon axe principal*/ 
+    align-items: center; /* ici je me sert de l'attribut "align-items: center pour mettre mon texte ou image au centre aux niveux de chacque coté de ma div*/ 
+    
+ }
+
+ 
+ .div6{
+     background-color: rgb(158, 251, 36);
+      width: 20vw;
+      height: 20vh;
+      display: flex;
+      flex-wrap: nowrap;  
+     justify-content: center;/* ici je me sert de l'attribut "justify-content: centerpour mettre mon texte ou image au centre aux niveux de mon axe principal*/ 
+     align-items: center; /* ici je me sert de l'attribut "align-items: center pour mettre mon texte ou image au centre aux niveux de chacque coté de ma div*/ 
+     
+     
+  }
+  
+
+ @media screen and (max-width: 780px) {
+    
+.div6{
+    background-color: bisque;
+}
+
+
+ }

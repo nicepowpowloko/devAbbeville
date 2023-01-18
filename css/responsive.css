@@ -1,0 +1,60 @@
+
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+.cubics{
+    display: flex;
+    flex-flow : row wrap;
+    justify-content: space-around;
+    background-color: rgb(93, 93, 102);
+}
+
+/* on utilise le "display flex" avec "row wrap" ce qui permet de les disposer sur une même ligne et le "justify content:space-around " lui nous sert à répartir équitablement nos blocs par rapport aux conteneur  */
+
+
+.cube{ 
+    flex: 0 1 20%;
+    /* le flex ici va nous servir à lui dire combien d'espace il va pouvoir prendre */
+    background-color: black;
+    height: 50px;
+    margin: 10px;
+}
+
+
+
+@media screen and (max-width: 780px){
+    .cubics{ 
+        flex-flow: column wrap;
+        background-color: black;
+      
+
+ 
+    }
+
+    .cube{
+        background-color: rgb(6, 26, 251);
+        height: 50px;
+        margin: 10px;
+    }
+
+    .cubics .titre{
+        color: #000;
+       
+
+ }
+    }
+
+
+/* ici avec le "@media screen" on lui dit que à partir de 780px de largeur nous voulons avoir des modification sur nos cubes */
+
+
+
+.cubics .titre{
+    color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* ici on appelle les titres "h1" qui vont parties de notre container "cubics" */

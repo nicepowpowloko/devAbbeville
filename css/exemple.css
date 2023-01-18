@@ -1,0 +1,283 @@
+
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+
+
+.couscous{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* ici on utilise la classe préalablement établie sur notre élément "span", pour lui mettre une couleur et une police différentes */
+
+.couscous1{
+    background: green;
+}
+
+/* ici on utilise la classe préalablement établie sur notre élément "span", pour lui mettre un fond ce qui nous permet de surligner un mots ou ensemble de texte à mettre en évidence */
+
+
+.liste2 li {
+    color: blue;
+}
+
+.liste3 li {
+    color: rgb(234, 4, 181);
+    list-style-type:upper-roman;
+}
+
+.liste1 li{
+    color: rgb(241, 138, 11);
+}
+
+/* On définit chacune de nos classe avec leurs classe pour pouvoir leur données à a chacune un style différents */
+
+.espace {
+    width: auto;
+    height: 1vh;
+    background-color: black;
+}
+
+/* On utilse la classe "espace" ce qui permet de modifié le style de notre séparateur "hr" */
+
+
+
+
+.actu1 p{
+  display: flex;
+  text-align: center;
+
+}
+
+ .warriors {
+    display: flex;
+    flex-wrap:nowrap;
+    color: yellow;
+    justify-content: center;
+}
+
+
+.espace1 {
+    width: 20%;
+    height: 0.5vh;
+    background-color: black;
+}
+
+.warriors1 {
+    display: flex;
+    color: rgb(10, 202, 167);
+    justify-content: center;
+}
+
+
+.actu{
+  
+    border: 2px black solid;
+    box-shadow: 2px 5px black; 
+    border-radius: 5%;
+    width: 50vw;
+    height: 30vh;
+    padding: 5px;
+    
+}
+
+/* Ici nous donnons un style a notre article pour chaque class appellées */
+
+
+.curry {
+ display: flex;
+ color: #7e2960;
+}
+
+
+
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+
+
+
+
+figure {
+    border: 1px #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 250px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
+
+
+
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* Ici nous donnons un style à notre carte API  */
+
+
+
+thead,
+tfoot {
+    background-color: #0783b9;
+    color: #fff;
+}
+
+tbody {
+    background-color: #e4f0f5;
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+table {
+   
+    border-collapse: collapse;
+    border: 2px solid rgb(15, 15, 15);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(248, 11, 11);
+    padding: 5px 10px;
+}
+
+/* Ici nous donnons un style à nos cellules  */
+
+
+td {
+    text-align: center;
+}
+
+
+/* Ici nous donnons un style à notre tableau  */
+
+
+
+
+form.form-example {
+    display: table;
+    border: #222 2px solid;
+    padding: 3em;
+}
+
+div.form-example {
+    display: table-row;
+    
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+   
+}
+
+label {
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #890ABF;
+    position: sticky;
+    top: 0px;
+    border: 2px solid black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Rampart One";
+    border: black solid 0.5px;
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .actu{ 
+        flex-flow: column wrap;
+        height: 70vh;
+        background-color: bisque;
+
+    }
+    .warriors{
+        color: black;
+        text-align: center;
+    }
+
+    .warriors1{
+        color: rgb(191, 235, 14);
+        text-align: center;
+    }
+
+    }
+
+    /* ici avec "@media screen", on travaille sur le responsive on lui note une valeur à atteindre, et à ce moment précis le style que nous lui avons demander se fera automatiquement   */

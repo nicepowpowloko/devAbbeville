@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cours-base.css">
+    <!-- Avec le "link rel" on li notre page html a notre page css pour pouvoir lié notre futur style -->
+
+    <title>Cours base</title>
+</head>
+<body>
+    
+<h1>Apprendre les bases</h1>
+
+<!-- On peut voir que notre titre et en gras et plus grand que notre paragraphe " ne pas utilisé trop de h1 sur une même page car peut faussez le référencement lors de la lecture du navigateur" -->
+
+<h2>Apprendre les bases</h2>
+<h3>Apprendre les bases</h3>
+
+<p>Comment utilisé <br> le HTML</p>
+<p> <em>Comment </em> <mark> utilisé </mark> <strong> le HTML</strong></p>
+
+<!-- Ici "strong" nous sert à indiquer à notre navigateur que "le HTML" et un mot ou groupe de mots importants dans notre paragraphe -->
+
+<!-- Ici "em" nous sert à donnée une mise en forme automatique en "italic" -->
+
+<!-- Ici "mark" nous sert à surligner un mot ou groupe de mots -->
+
+<ul>
+<figcaption>liste <mark>non ordonnée</mark> </figcaption>
+    <li>Souris</li>
+    <li>Cusine</li>
+    <li>Avion</li>
+</ul>
+<!-- Nous utilisons une liste non ordonnée et non classés par intéret dont l'utilisation de "ul" -->
+
+<ol>
+<figcaption>liste <mark>ordonnée</mark></figcaption>
+    <li>Cahier des charges</li>
+    <li>Arborescence</li>
+    <li>Maquettage</li>    
+</ol>
+<!-- Nous utilisons une liste ordonnée et classés dont l'utilisation de "ol" -->
+
+<dl> <!-- Nous utilisons "dl" pour définition de la liste -->
+ <figcaption>liste <mark>de définitions</mark></figcaption> 
+ <dt>NBA</dt> <!-- Nous utilisons "dt" pour la définition du terme -->
+ <dd>National Basketball Association</dd> <!-- Nous utilisons "dd" pour définir le terme -->
+</dl>
+
+<ol>
+    <figcaption><mark>Imbrication de liste</mark></figcaption>
+        <li>Cahier des charges
+            <ul>
+                <li>Votre structure</li>
+                <li>Présentation du projet</li>
+            </ul>
+        </li>
+        <li>Arborescence
+            <ul>
+                <li>Diagramme</li>
+                <li>Parcour utilisateur</li>
+            </ul>
+        </li>
+        <li>Maquettage
+            <ul>
+                <li>Wireframe</li>
+                <li>Graphique</li>
+            </ul>
+        </li>    
+    </ol>
+ <!-- Création d'une liste imbricer peut nous servir de sous menu pour une "nav bar"  Attention à bien refermer nos listes pour chaque catégories-->   
+<p class="p2"><mark> Les liens internes externes </mark></p>
+<p>Ce lien nous envoie sur notre page d'exemple <a href="./exemple.html">EXEMPLE</a></p>
+<!-- le premier lien nous envoie sur notre page exemple en restant sur le même onglet de navigations -->
+
+<p>Ce lien nous envoie sur notre page d'exemple <a href="./exemple.html" target="_blank">EXEMPLE</a></p>
+<!-- le deuxiéme lien nous envoie sur notre page exemple en ouvrant un onglet de navigations -->
+
+<p>Ce lien nous envoie sur le site <a href="https://kikikickz.com/collections/snkrs-day">Kikikickz</a></p>
+<!-- le troisiéme lien nous envoie sur un lien externe ( site web ) -->
+
+<p class="p2"><mark> Les liens types ancres</mark></p>
+<p>Pour aller directement à nike <a href="#ancre1">clic ici</a></p>
+<!-- Le lien "ancre" sert a rester sur la même page mais vas nous diriger directement sur notre recherhe-->
+
+<p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ratione iste voluptatibus, ex quae repellendus incidunt quam voluptatum ipsa soluta? Ex voluptatibus repellendus provident! Nesciunt deserunt quia earum libero magni? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil nostrum odio nobis vitae. Consequuntur impedit, nemo fuga ipsa atque, nulla facere veniam nobis totam excepturi rem vel officia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto sequi ad provident cumque ipsam a id officiis reiciendis illum. Maxime, at porro! At soluta, quibusdam harum quos quidem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut deserunt ipsa ab tenetur eos quod asperiores dolorem molestias cumque ipsum, illum, dicta, quibusdam adipisci temporibus reprehenderit alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi molestias eveniet sint sunt, magni, velit ullam asperiores deleniti aspernatur et iure, debitis incidunt laudantium ipsam quas rerum facilis aut quam.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ratione iste voluptatibus, ex quae repellendus incidunt quam voluptatum ipsa soluta? Ex voluptatibus repellendus provident! Nesciunt deserunt quia earum libero magni? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil nostrum odio nobis vitae. Consequuntur impedit, nemo fuga ipsa atque, nulla facere veniam nobis totam excepturi rem vel officia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto sequi ad provident cumque ipsam a id officiis reiciendis illum. Maxime, at porro! At soluta, quibusdam harum quos quidem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut deserunt ipsa ab tenetur eos quod asperiores dolorem molestias cumque ipsum, illum, dicta, quibusdam adipisci temporibus reprehenderit alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi molestias eveniet sint sunt, magni, velit ullam asperiores deleniti aspernatur et iure, debitis incidunt laudantium ipsam quas rerum facilis aut quam.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ratione iste voluptatibus, ex quae repellendus incidunt quam voluptatum ipsa soluta? Ex voluptatibus repellendus provident! Nesciunt deserunt quia earum libero magni? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil nostrum odio nobis vitae. Consequuntur impedit, nemo fuga ipsa atque, nulla facere veniam nobis totam excepturi rem vel officia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto sequi ad provident cumque ipsam a id officiis reiciendis illum. Maxime, at porro! At soluta, quibusdam harum quos quidem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut deserunt ipsa ab tenetur eos quod asperiores dolorem molestias cumque ipsum, illum, dicta, quibusdam adipisci temporibus reprehenderit alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi molestias eveniet sint sunt, magni, velit ullam asperiores deleniti aspernatur et iure, debitis incidunt laudantium ipsam quas rerum facilis aut quam.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ratione iste voluptatibus, ex quae repellendus incidunt quam voluptatum ipsa soluta? Ex voluptatibus repellendus provident! Nesciunt deserunt quia earum libero magni? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil nostrum odio nobis vitae. Consequuntur impedit, nemo fuga ipsa atque, nulla facere veniam nobis totam excepturi rem vel officia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto sequi ad provident cumque ipsam a id officiis reiciendis illum. Maxime, at porro! At soluta, quibusdam harum quos quidem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut<p id="ancre1">nike</p> deserunt ipsa ab tenetur eos quod asperiores dolorem molestias cumque ipsum, illum, dicta, quibusdam adipisci temporibus reprehenderit alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi molestias eveniet sint sunt, magni, velit ullam asperiores deleniti aspernatur et iure, debitis incidunt laudantium ipsam quas rerum facilis aut quam.</p>
+
+<p class="p2"><mark>lien type email</mark></p>
+<!-- ce type de lien nous sert pour recevoir mail d'une personne grâçe à "mailto:" -->
+<p class="p2">Envoie moi un <a href="mailto:thomas22751@gmail.com">mail</a></p>
+
+<p class="p2"><mark>lien téléchargement fichier</mark></p>
+<!-- ce type de lien nous sert à télécharger un fichier type "pdf" ou autre -->
+<p class="p2">Télécharge ce <a href="file:///C:/Users/thoma/OneDrive/Bureau/COURS%20FORMATION/Cours%20code/html/lexique%20html.pdf"> document</a></p>
+<br>
+
+<p class="p2"><mark>élément type block et inline</mark></p>
+
+<div class="div1">
+    <div class="div2"> 
+    </div>
+</div>
+<!-- ici je travaille avec "div1" et "div2" en élément ype block je les imbrics ensemble -->
+
+<br>
+
+
+<!-- ici je travaille sur une navbar -->
+
+
+<p class="p2"><mark>nav bar avec menu</mark></p>
+<br>
+<nav>
+    <ul class="menu"> <!-- ici on créer une première liste "ul" -->
+      <li>
+        JEUX   <!-- ici on créer la catégorie pour notre sous menu -->
+        <ul class="sub-menu"> <!-- ici on créer une deuxiéme liste "ul" qui va nous servie de menu déroulant -->
+          <li><a href="https://overwatch.blizzard.com/fr-fr/">Overwatch</a></li>
+          <li>Star craft</li>
+          <li>Diablo</li>
+          <li>Elden Ring</li>
+        </ul>
+      </li>
+      <li>
+        BOUTIQUE
+        <ul class="sub-menu">
+          <li>Mmo</li>
+          <li>Free to play</li>
+          <li>Sports</li>
+          <li>Multi</li>
+        </ul>
+      </li>
+      <li>
+        ACTUALITÉS
+        <ul class="sub-menu">
+          <li>Serie X</li>
+          <li>GTA</li>
+          <li>WOW</li>
+          <li>GAME WEEK</li>
+          <li>BLIZZARD</li>
+        </ul>
+      </li>
+      <li>
+        ESPORT
+        <ul class="sub-menu">
+          <li>Ligue Overwacth</li>
+          <li>WCS StarCraft</li>
+          <li>Masters</li>
+          <li>Faze</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+</body>
+</html>

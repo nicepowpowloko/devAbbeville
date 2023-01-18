@@ -1,0 +1,82 @@
+/* les absolu (DO NOT USE) */
+
+
+.abso1{
+    background-color: aqua;
+    height: 120px;
+    width: 150px;
+}
+
+.abso2{
+    background-color: green;
+    height: 10pc;
+    width: 12pc ;
+}
+.abso3{
+    background-color: rgb(191, 235, 13);
+    height: 120pt;
+    width: 120pt ;
+}
+.abso4{
+    background-color: rgb(231, 19, 206);
+    height: 10cm;
+    width: 12cm;
+}
+.abso5{
+    background-color: rgb(152, 131, 102);
+    height: 105mm;
+    width: 110mm;
+}
+.abso6{
+    background-color: rgb(243, 104, 12);
+    height: 10in;
+    width: 12in;
+}
+
+/* les relatives (les meilleurs) */
+
+.rel1{
+    background-color: rgb(124, 139, 5);
+    height: 30%;
+    width: 30%;
+}
+.rel2{
+    background-color: teal;
+    height: 20em;
+    width: 20em;
+}
+.rel3{
+    background-color: rgb(56, 14, 134);
+    height: 15rem;
+    width: 15rem;
+}
+.rel4{
+    background-color:crimson;
+    height: 10vh;
+    width: 10vh;
+}
+.rel5{
+    background-color:darkgoldenrod;
+    height: 10vw;
+    width: 10vw;
+}
+.rel6{
+    background-color: teal;
+    height: 10vmin;
+    width: 10vmin;
+}
+.rel7{
+    background-color:forestgreen;
+    height: 10vmax;
+    width: 10vmax;
+}
+.rel8{
+    background-color:fuchsia;
+    height:5ex;
+    width:5ex;
+}
+.rel9{
+    background-color:bisque;
+    height:13ch;
+    width:13ch;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/exemple.css">
+    <title>exemple</title>
+</head>
+
+<!-- Dans le contenaire head nous avons les meta pour l'utilisation de tout type de caractéres, le titre et biensur le link pour relier nos documents css ou pour incorporere de la police -->
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+              <li class="deroulant"><a href="#">Équipes &ensp;</a>
+              </li>
+
+              <li class="deroulant"><a href="#">Classement &ensp;</a>
+              </li>
+
+              <li class="deroulant"><a href="#">Stade &ensp;</a>
+              </li>
+              
+              <li><a href="#">Mercato/News</a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+<main> <!-- "main" répresnte le contenu principale de notre "body" -->
+
+<h1>Formation dev</h1>
+<br>
+<p>Ce week-end j'ai manger du <span class="couscous">couscous</span></p>
+<br>
+<p>Ce week-end j'ai manger du <span class="couscous1">couscous</span></p>
+
+<!-- on utilise le span dans cette exemple pour mettre une importance au mot couscous -->
+<br>
+
+<ol class="liste1">
+    <li>Air force one</li>
+    <li>New balce 550</li>
+    <li>Lebron 6</li>
+    <li>Dunk low</li>
+</ol>
+
+<!-- Avec l'utilisation de l'élément "ol" nous avons donc une liste ordonnées -->
+
+<hr class="espace">
+
+<!-- Avec l'utilisation de l'élément "hr" nous pouvons couper un paragraphe ou ajouter un selecteur d'espacement -->
+
+<ul class="liste2">
+    <li>Air force one</li>
+    <li>New balce 550</li>
+<ul class="liste3">
+    <li>Lebron 6</li>
+    <li>Dunk low</li>
+</ul>    
+   
+</ul>
+
+<!-- Avec l'utilisation de l'élément "ol" nous avons donc une liste  non ordonnées -->
+
+<br>
+
+<article class="actu">
+    <h1 class="warriors">Les Warriors explosent les Spurs devant 68 323 spectateurs !</h1>
+    <br>
+    <hr class="espace1">
+    <br>
+<article class="actu1">
+    <h2 class="warriors1">Devant une affluence record</h2>
+    <br>
+    <p>Des Warriors concernés entament le match sur un 17-4. Il faut attendre cinq minutes pour voir les Spurs marquer leur premier panier du match. Romeo Langford lance alors un 9-0 qui relance les Texans mais l’adresse extérieure des remplaçants de Golden State leur permet de garder la tête (33-28).</p>
+</article>    
+</article>
+
+<!-- On traville sur un article avec plusieurs titre, et paragraphe nous lui appliqueront un style en css -->
+
+<br>
+
+<p class="curry">Passé par cette salle en 2018, lors de la finale NCAA, le duo Jordan Poole – Donte DiVincenzo enfonce le clou et permet à son équipe de prendre 13 longueurs d’avance en débutant la deuxième période sur un 16-8 (49-36). </p>
+<aside>Steph Curry de retour</aside>
+<p class="curry">Josh Richardson et Doug McDermott gardent les Spurs en embuscade mais les hommes de Steve Kerr ne relâchent pas la pression et deux lay-up de Klay Thompson et Jordan Poole leur donnent 14 points d’avance à la pause (74-60).</p>
+
+<!-- On utilise le inside pour apporter une information en plus qui coupe un groupe de texte -->
+
+<br>
+
+<figure>
+    <img src="../img/chauve2.jpg"
+         alt="chauve">
+    <figcaption>Je suis chauve</figcaption>
+</figure>
+
+<br>
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+
+<!-- on utilise lélément "iframe" pour permettre une intégration d'un url google API -->
+<br>
+<br>
+
+<table>
+
+      <!-- "table" nous sert a crée notre tableau a base de données-->
+
+    <caption>Voici un tableau</caption>
+
+    <!-- ici avec le "caption" on définit un titre à notre tableau -->
+
+    <thead>  <!-- ici "thead" nous sert à faire un ensemble de lignes" -->
+
+        <tr>  <!-- ici "tr" nous sert à crée une cellule -->
+            <th>Sneakers</th>
+            <th scope="col">Prix</th> <!-- ici "th" nous sert à crée une cellule d'en tête -->
+        </tr>
+    </thead>  <!-- ici "thead" nous sert à faire un ensemble de lignes -->
+    <tbody>
+        <tr>
+            <th scope="row">Dunk low</th>
+            <td>190 $</td>
+        </tr>
+        <tr>
+            <th scope="row">Lebron 19</th>
+            <td>200 $</td>
+        </tr>
+    </tbody>
+    <tfoot> <!-- ici "tfoot" nous sert à crée des cellules de fin de tableau -->
+        <tr>
+            <th scope="row">Total</th>
+            <td>390 $</td>
+        </tr>
+    </tfoot>
+</table>
+
+<br>
+<br>
+
+<form action="" method="get" class="form-example">
+    <div class="form-example">
+      <label for="name">inscri ton nom</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+      <label for="email">inscri ton mail</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+      <input type="submit" value="envoie">
+    </div>
+  </form>
+  <br>
+
+
+
+
+
+</main>
+
+
+
+
+<style>
+    h1{
+        color:blue ;
+    }
+</style>
+
+<!-- l'élément style nous sert comme son nom l'indique a donner un style a notre document par éléments selectionés, il peut s'ouvir directement dans notre fichier HTML mais il est recommander de le travailler sur une page CSS -->
+
+
+
+
+
+</body>
+
+
+
+</html>

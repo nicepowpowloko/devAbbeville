@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+  
+}
+
+body{
+    background-color:#2c1c1c;
+}
+
+#container{
+    max-width:61.25rem;
+    margin:1.25rem auto;
+  
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:1.25rem;
+    padding:0.3125rem;
+   
+}
+.card{
+    flex:1 0 12.5rem;
+    margin:0.625rem;
+    
+}
+.card-image{
+    display:block;
+    height:21.875rem;
+    background-size:cover;
+    box-shadow:0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    transition:transform 500ms ease-in;
+   
+    
+}
+
+.card-image.card-1{
+    filter: grayscale(100%);
+  }
+
+  .card-image.card-3{
+    filter: grayscale(100%);
+  } /* je lui met un effet griser pour que ensuite aux hover l'image s'affiche en couleurs */
+
+  .card-image.card-3:hover{
+    transform:scale(1.10);
+    filter: grayscale(0%);
+    /* ici j'indique que aux passage de la souris je veux que l'image s'aggrandisse de "1.10" */
+}
+
+
+
+.card-image:hover{
+    transform:scale(1.10);
+    /* ici j'indique que aux passage de la souris je veux que l'image s'aggrandisse de "1.10" */
+}
+.card-image.card-1{
+  background-image: url("../img/golden-state-warriors-picture-backgrounds-wallpaper-preview.jpg");
+}
+.card-image.card-2{
+    background-image: url("../img/golden-state-warriors-wallpaper-oob0gxm68s8igbud.jpg");
+}
+.card-image.card-3{
+    background-image: url("../img/rocket.webp");
+}
+.card-image.card-4{
+    background-image: url("../img/dofus-touch-une.webp");
+}
+.card-image.card-5{
+    background-image: url("../img/fifa23.jpg");
+}
+.card-image.card-6{
+    background-image: url("../img/naruto.jpg");
+}
+
+

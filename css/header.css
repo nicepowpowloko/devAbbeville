@@ -1,0 +1,48 @@
+.page1{
+height: 20vh;
+width: auto;
+background-color: black;
+display: flex;
+justify-content: center;
+color: antiquewhite;
+
+}
+
+.logo{
+    height: 20vh;
+    width: 20vw;
+margin-right: 90%;
+border: 5px solid red;
+}
+
+.logo img{
+    height: 20vh;
+    width: 20vw;
+
+}
+
+
+.page2{
+    height: 20vh;
+    width: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+
+    }
+
+.page3{
+    height: 50vh;
+    width: 20vw;
+    background-color: blue;
+    margin-top: 30px;
+    margin-left: 50%;
+    position: relative;
+}
+
+
+
+
+
+
+

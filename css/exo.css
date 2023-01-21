@@ -1,0 +1,45 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; } 
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+    .div1{
+    background-color: aqua;
+    height: 20vh;
+    width: auto;
+    display: flex;
+}
+
+
+    .parent1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div2 { grid-area: 5 / 1 / 6 / 6; } 
+
+
+
+        .div2{
+            background-color: aqua;
+            height: 20vh;
+            width: auto;
+        }
+        

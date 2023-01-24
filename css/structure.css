@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#grille{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header"
+        "aside article"
+        "footer footer";
+    width:100vw;
+    min-height:100vh;/* Une hauteur au conteneur*/
+    margin:auto;
+
+}
+
+
+/* */
+header{
+    background: #de1569;
+    grid-area: header;
+}
+
+header p{
+   color: chartreuse;
+    grid-area: header;
+  
+}
+
+aside{
+    background: #ffd502;
+    grid-area: aside;
+}
+
+article{
+   background-image: url("../img/diablo.jpg");
+    grid-area: article;
+    color: aliceblue;
+    font-weight: bolder;
+    
+}
+
+footer{
+    background: #dc0cfc;
+    grid-area: footer;
+}
+
+
+.boit{
+    display:block;
+    text-align: center;
+    padding-top: 10px;
+    border:3px solid #003df5;
+    font-size: 2em;
+   
+  
+}

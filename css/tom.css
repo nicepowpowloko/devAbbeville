@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 1 / 1 / 2 / 2; }
+    .div3 { grid-area: 1 / 2 / 2 / 5; }
+.div1 {
+    background-color: aqua;
+    display: flex;
+    width: auto;
+}
+.div2{
+  background-image: url("../img/elden\ ring.jpg");
+  width: 20vw;
+}
+
+
+
+.div3 li {
+    float: left;
+    color: #B3CF32;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+

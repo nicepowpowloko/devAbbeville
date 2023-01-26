@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*  ici je travaille sur le style de mon header et je lui indique mon animation   */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/chauve2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    animation: anim alternate infinite 25s forwards;
+}
+
+/* sur cette class je travaille directement sur son animation et sa position */
+
+.filtre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: filtercolor 25s infinite forwards;
+    color: white;
+    font-size: 2em;
+}
+
+
+/* dans ce premier "@keyframes" je travaille sur mon animation "filtercolor" avec un départ et une fin tout en lui indiquant les étaples à suivres */
+
+@keyframes filtercolor{
+    from{
+        background-color: rgba(0, 0, 0, 0.391);
+    }
+    10%{
+        background-color: rgba(174, 23, 23, 0.391);
+    }
+    20%{
+        background-color: rgba(34, 100, 199, 0.391);
+    }
+    30%{
+        background-color: rgba(206, 57, 211, 0.391);
+    }
+    40%{
+        background-color: rgba(48, 215, 53, 0.391);
+    }
+    50%{
+        background-color: rgba(217, 155, 62, 0.391);
+    }
+    60%{
+        background-color: rgba(70, 189, 219, 0.391);
+    }
+    70%{
+        background-color: rgba(208, 38, 177, 0.391);
+    }
+    80%{
+        background-color: rgba(58, 162, 51, 0.391);
+    }
+    90%{
+        background-color: rgba(206, 107, 46, 0.391);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.391);
+    }
+}
+
+/* dans ce deuxiéme "@keyframes" je travaille sur mon animation "anim" avec un départ et une fin tout en lui indiquant les étaples à suivres */
+@keyframes anim{
+    from{
+        background-position: center;
+    }
+    10%{
+        background-position: left;
+    }
+    20%{
+        background:url(../img/diablo.jpg);
+      
+    }
+    30%{
+        background-position: right;
+    }
+    40%{
+        background: url(../img/dofus-touch-une.webp);
+        
+    }
+    50%{
+        background-position: bottom;
+    }
+    60%{
+        background: url(../img/naruto.jpg);
+      
+    }
+
+    70%{
+        background-position: center;
+    }
+    80%{
+        background: url(../img/elden\ ring.jpg);
+    
+    }
+    90%{
+        background-position: right top;
+    }
+    to{
+        background: url(../img/roi-liche-header.webp);
+        
+    }
+}

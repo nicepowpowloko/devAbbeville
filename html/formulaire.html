@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="#" method="post"> <!--la balise form est la balise qui permet de définir la méthode et l'objectif de l'action d'un formulaire, c'est cette balise qui permet au bouton d'être utile dans un formulaire-->
+        <fieldset><!--La balise fieldset permet d'individualiser les parties d'un formulaire et à les nommer à l'aide de la balise legend-->
+            <legend>Première partie</legend>
+            <label for="user">Nom d'utilisateur</label>
+            <input type="text" name="user" id="">
+            <br><!--On utilise les balises input pour définir des espaces d'écriture pour l'utilisateur et les balises label pour leur associer un texte via leur attibut name-->
+            <label for="pass">Mot de passe</label>
+            <input type="password" name="pass" id="">
+            <br>
+            <label for="dateins">date d'inscription</label>
+            <input type="date" name="" id="">
+            <br>
+            <label for="mail">Adresse Mail</label>
+            <input type="email" name="mail" id="">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Choisissez :</legend>
+            <input type="checkbox" name="bost" id="">
+            <label for="bost">Boston Celtics</label>
+            <input type="checkbox" name="bost" id="">
+            <label for="bost">Boston Celtics</label>
+            <input type="checkbox" name="bost" id="" checked>
+            <label for="bost">Boston Celtics</label>
+            <input type="checkbox" name="bost" id="">
+            <label for="bost">Boston Celtics</label>
+            <!--les checkboxes permettent de définir des choix multiples dans un formulaire, l'information envoyé sera "ça et ça et ça"-->
+        </fieldset>
+        <fieldset>
+            <legend>choisissez un seul :</legend>
+            <input type="radio" name="choiwin" id="choicelt">
+            <label for="choicelt">Boston Celtics</label>
+            <input type="radio" name="choiwin" id="choiwar">
+            <label for="choiwar">GS Warriors</label>
+        </fieldset>
+        <fieldset>
+            <legend>choisir :</legend>
+            <select name="win" id="">
+                <option value="celtics">Boston</option>
+                <option value="warriors">Golden State</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Description</legend>
+            <label for="desc">Décrivez-nous votre équipe favorite</label>
+            <br>
+            <textarea name="desc" id="" cols="20" rows="10" placeholder="Décrivez"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Upload</legend>
+            <label for="logo">Votre logo</label>
+            <input type="file" name="logo" id="">
+        </fieldset>
+        <input type="submit" value="Envoyer">
+        <!--l'input de type submit permet d'envoyer une requête contenant les informations insérées par l'utilisateur au moment du clique-->
+
+        <fieldset>
+            <legend>attributs spécifiques</legend>
+            <input type="text" name="" id="" required><!--l'attribut required va bloquer l'envoi du formulaire tant que le champs n'est pas rempli-->
+            <input type="text" name="" id="" placeholder="Insérer du texte ici"><!--l'attribut placeholder permet de définir un texte exemple dans le champ-->
+            <input type="password" name="" id="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Ce mot de passe doit contenir 8 caractère ou plus">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background:linear-gradient(65deg, rgb(209, 220, 198), rgb(3, 130, 3));
+    padding: 35px;
+    margin: 25px;
+    border-radius: 25px;
+}
+fieldset{
+    border: none;
+    margin: 35px;
+}
+
+legend{
+    font-size: 1.8em;
+    color:beige;
+}
+
+fieldset input {
+    margin: 10px;
+    text-align: right;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 10px;
+    background-color: chocolate;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+input[type="submit"]:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}

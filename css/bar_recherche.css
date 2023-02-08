@@ -1,0 +1,47 @@
+
+
+
+/* contenue de la barre  */
+
+.bar-recherche {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%,-50%);
+  background: #f30bb9;
+  width: 500px;
+  height: 40px;
+  padding: 0.2rem 0.6rem 0.2rem 0.2rem;  
+  box-sizing: border-box;
+  box-shadow: black 2px 2px 3px;
+
+}
+/* travail sur l'écriture quand le texte est taper */
+
+.bar-recherche input {
+  border: 0;
+  height: 100%;
+  width: 85%;
+  padding: 0 1rem;
+  font-size: 1rem;
+ 
+}
+
+/* travail sur le boutton */
+
+.bar-recherche button {
+  background: none;
+  border: none;
+  color: rgb(8, 8, 8);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+

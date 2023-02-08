@@ -1,0 +1,26 @@
+ /* debut parallax */
+ .parallax1 {
+    background-image: url("../img/wizarding-world-legacy-link-reward-wallpaper-0eaee25c51d148b5ada70c8944b7e199.jpg");
+  }
+
+  .parallax2 {
+    background-image: url("../img/hogwart-legacy.jpg");
+  }
+
+  .parallax3 {
+    background-image: url("../img/serpentard.png");
+  }
+
+  .section-fond {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* fin de  parallax */

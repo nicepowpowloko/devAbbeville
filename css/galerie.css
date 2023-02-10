@@ -24,7 +24,16 @@ body{
 .card{
     flex:1 0 12.5rem;
     margin:0.625rem;
-    
+   
+}
+
+.card figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bolder;
+    padding-top: 10px;
 }
 .card-image{
     display:block;

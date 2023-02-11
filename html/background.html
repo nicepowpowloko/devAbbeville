@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/background.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fixed" id="fixed1"></div>
+  <div class="fixed" id="fixed2"></div>
+  <div class="fixed" id="fixed3"></div>
+  <div class="fixed" id="fixed4"></div>
+
+  <nav id="boutons">
+    <ul>
+      <li><a id="bt1" href="#introduction">J</a></li>
+      <li><a id="bt2" href="#ancre_2">V</a></li>
+      <li><a id="bt3" href="#ancre_3">B</a></li>
+      <li><a id="bt4" href="#ancre_4">R</a></li>
+    </ul>
+  </nav>
+</body>
+
+<script>
+    $(document).ready(function()
+{
+  $("#boutons a").on('click', function(){
+    var idx = $(this).attr('id');
+    idx = idx.replace('bt','');
+    $('.fixed').not('#fixed'+idx).fadeOut(1000);
+    $('#fixed'+idx).fadeIn(1000);
+    $('#boutons').removeClass().addClass('bts'+idx);
+  });
+});
+</script>
+</html>

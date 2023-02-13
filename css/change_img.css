@@ -1,0 +1,57 @@
+
+
+
+
+  .slider-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+    padding: 100px;
+  
+  }
+  .menu {
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+   
+    text-align: center;
+  
+  }
+
+
+  .menu  label img {
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    
+   
+   
+
+  }
+
+
+ 
+  .slide-img {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 100%;
+    z-index: 10;
+   
+   
+  }
+  [id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    
+  }
+  
+  
+
+ 

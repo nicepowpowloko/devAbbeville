@@ -8,31 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="fixed" id="fixed1"></div>
-  <div class="fixed" id="fixed2"></div>
-  <div class="fixed" id="fixed3"></div>
-  <div class="fixed" id="fixed4"></div>
+  <div class="container">
+    <div class="patch color-red">
+    </div>
+    <div class="patch color-green">
+    </div>
+    <div class="patch color-yellow">
+    </div>
+    <div class="patch color-blue">
+    </div>
+    <div class="patch color-orange">
+    </div>
+    <div class="patch color-purple">
+    </div>
+    <div class="patch bgimage">
+    </div>
+    </div>
 
-  <nav id="boutons">
-    <ul>
-      <li><a id="bt1" href="#introduction">J</a></li>
-      <li><a id="bt2" href="#ancre_2">V</a></li>
-      <li><a id="bt3" href="#ancre_3">B</a></li>
-      <li><a id="bt4" href="#ancre_4">R</a></li>
-    </ul>
-  </nav>
+<script src="../js/background.js"></script>
+ 
+<script src="../jquery-ui-1.13.0/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+
 </body>
-
-<script>
-    $(document).ready(function()
-{
-  $("#boutons a").on('click', function(){
-    var idx = $(this).attr('id');
-    idx = idx.replace('bt','');
-    $('.fixed').not('#fixed'+idx).fadeOut(1000);
-    $('#fixed'+idx).fadeIn(1000);
-    $('#boutons').removeClass().addClass('bts'+idx);
-  });
-});
-</script>
 </html>

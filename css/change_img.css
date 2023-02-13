@@ -15,7 +15,6 @@
     position: absolute;
     z-index: 11;
     bottom: 0;
-   
     text-align: center;
   
   }
@@ -29,16 +28,10 @@
     background: #ccc;
     border-radius: 10px;
     margin: 10px;
-    
-   
-   
-
   }
 
-
- 
   .slide-img {
-    width: 600px;
+    width: 550px;
     height: 300px;
     position: absolute;
     left: 100%;
@@ -53,5 +46,219 @@
   }
   
   
+/* Tailles sneakers */
 
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 9px;
+    margin-left: 600px;
+    margin-top: -500px;
+    }
+    
+    .div1 { grid-area: 1 / 4 / 8 / 6; }
+    .div2 { grid-area: 7 / 4 / 8 / 5; }
+    .div3 { grid-area: 7 / 5 / 8 / 6; }
+    .div4 { grid-area: 6 / 5 / 7 / 6; }
+    .div5 { grid-area: 6 / 4 / 7 / 5; }
+    .div6 { grid-area: 5 / 4 / 6 / 5; }
+    .div7 { grid-area: 5 / 5 / 6 / 6; }
+    .div8 { grid-area: 4 / 5 / 5 / 6; }
+    .div9 { grid-area: 4 / 4 / 5 / 5; }
+    .div10 { grid-area: 3 / 4 / 4 / 5; }
+    .div11 { grid-area: 3 / 5 / 4 / 6; }
+    .div12 { grid-area: 2 / 5 / 3 / 6; }
+    .div13 { grid-area: 2 / 4 / 3 / 5; }
+    .div14 { grid-area: 1 / 4 / 2 / 5; }
+    .div15 { grid-area: 1 / 5 / 2 / 6; } 
+
+
+    .div1{
+        width: auto;
+        height: 50vh;
+
+        display: block;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        
+        
+    }
+
+    .div2{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(249, 254, 254);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      
+    }
+
+    .div3{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(248, 245, 247);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div4{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(252, 252, 252);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div5{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(244, 239, 240);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div6{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(236, 240, 240);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      
+    }
+
+    .div7{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(248, 245, 247);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div8{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(246, 244, 249);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div9{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(241, 236, 237);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div10{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(241, 242, 241);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div11{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(249, 250, 244);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div12{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div13{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(246, 239, 241);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div14{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(249, 242, 244);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .div15{
+        width: auto;
+        height: 5vh;
+        border: 2px solid black;
+        background-color: rgb(249, 239, 241);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
+
+    .parent p{
+        font-weight:bolder ;
+       font-size: 1em;
+    }
  
+    h1{
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+    a {
+      display: flex;
+      justify-content: center;
+      max-width: 190px;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 20px 20px;
+      transition: 1s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+      margin-left: 900px;
+      margin-top: -150px;
+    }
+    
+    a.button {
+      color: #1206f6;
+      box-shadow: #1206f6 0 0 0 4px inset;
+    }
+    
+    a.button:hover {
+      color: #fff;
+     
+    }
+    .button:hover{
+      background-color: black;
+    }
+    

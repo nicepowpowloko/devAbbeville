@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(120deg, rgb(7, 7, 7), rgb(153, 215, 8), black);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+header img{
+    height: 10vh;
+}
+main{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gal{
+    margin: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 60vh;
+}
+
+.gal img{
+    height: 20vh;
+}
+
+/* On utilise la règle @media pour pouvoir définir les "points de rupture" qui vont permettre d'appliquer des styles différents selon la taille de la fenêtre qui affiche le document */
+
+@media/*Correspond à l'initialisation de la règle CSS de media query qui permet d'appliquer des propriétés CSS définies selon une spécification*/ screen/*permet de définir la règle pour une taille d'écran*/ and (max-width: 900px)/*Entre parenthèse on pourra définir la taille de l'écran maximale ou minimale qui permettra d'appliquer les valeurs de la règle*/ {
+        body{
+            background: linear-gradient(50deg, rgb(12, 12, 12), green);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+        }
+        .text{
+            margin: 25px;
+        }
+
+        .gal img{
+            height: 50px;
+        }
+}
+
+
+@media screen and (min-width: 768px)/*l'utilisation de min-width permet de définir le comportement du CSS A PARTIR de la valeur définie entre parenthèse*/{
+  
+
+}
+
+@media screen and (max-width: 768px)/*l'utilisation de max-width permet de définir le comportement du CSS JUSQU'A la valeur définie entre parenthèse*/{
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 922px) /* l'utilisation conjointe de max-width et min-width permet de définir une fourchette d'activation pour la règle CSS */{
+
+}
+@media screen and (min-width: 600px) and (max-width: 922px) and (orientation: landscape) /* la règle orientation (spécifique à l'utilisation d'un affichage changeant) permet de définir l'affichage de la règle CSS selon l'orientation de l'écran  */{
+    nav{
+        color: antiquewhite;
+    }
+
+}
+
+@media screen and (min-width: 900px) and (-webkit-max-device-pixel-ratio: 2) /* dans les cas spécifique d'appareil samsung ou apple on retrouvera un ratio de pixel différent du commun des mortels on devra donc définir le ratio de pixel de l'écran afin de pouvoir permettre au CSS de recalculer la taille optimale */ {
+
+}
+
+/* PETIT POINT SUR LES UNITES DE MESURES EN CSS */
+
+/*
+UNITéS RECOMMANDéES
+
+vh : vh correspond à 1% de la hauteur de la fenêtre qui affiche le document
+vw : vw correspond à 1% de la largeur de la fenêtre qui affiche le document
+px : le pixel correspond à 1 petit point luminescent qui permet l'affichage de l'écran (varie selon les tailles d'écran qui sont elles-mêmes définies en pixels)
+% : le pourcentage correspond à 1% de la largeur maximale ou de la hauteur maximale du conteneur sélectionné
+
+UNITéS NON RECOMMANDéES
+
+cm : c'est pas représentatif de la taille d'un écran
+pt : peu précis
+pc : c'est encore moins précis que le centimètre
+
+
+UNITéS A UTILISATION SPéCIFIQUE
+
+em : correspond à la taille spécifique de la police recalculé selon la taille de la police de l'élément parent
+rem : correspond à la taille de la police par rapport à la taille de la police dans la balise HTML 
+deg : permet de définir un angle 
+*/
+
+
+

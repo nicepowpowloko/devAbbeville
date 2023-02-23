@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+        #menu {
+           position:absolute;
+           bottom:0;
+        }
+        #menu, #menu ul {
+           padding:0;
+           margin:0;
+           list-style: none;
+           text-align: center;
+        }
+        #menu li {
+           display:inline-block;
+           position: relative;
+           background: #333;
+        }
+        #menu ul li {
+           display:block;
+           position: relative;
+           background: #666
+        }
+        #menu ul {
+           position:absolute;
+           height: 0;
+           width:100%;
+           overflow:hidden;
+            transition: all 1s;
+           top:0;
+        }
+        #menu li:hover ul {
+           top:-110px;
+           height: 110px;
+        }
+        #menu a {
+           color:#fff;
+           display:block;
+           height:30px;
+           line-height: 30px;
+           text-decoration: none;
+           padding:0 20px;
+        }
+        #menu ul li a {
+           padding:3px;
+        }
+        </style>
+        </head>
+        <body>
+        <ul id="menu">
+           <li><a href="#">lien menu</a>
+              <ul>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+              </ul>
+           </li>
+           <li><a href="#">lien menu</a>
+              <ul>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+              </ul>
+           </li> 
+           <li><a href="#">lien menu</a>
+              <ul>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+                 <li><a href="#">sous menu</a></li>
+              </ul>
+           </li>
+        </ul>
+</body>
+</html>

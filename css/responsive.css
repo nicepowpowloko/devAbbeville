@@ -19,8 +19,8 @@
     background-color: black;
     height: 50px;
     margin: 10px;
+    
 }
-
 
 
 @media screen and (max-width: 780px){
@@ -38,24 +38,7 @@
         margin: 10px;
     }
 
-    .cubics .titre{
-        color: #000;
-       
 
- }
-
-
- .cubics img{ 
-    flex-flow: column wrap;
-    height: 50px;
-    width: 420px;
-    display: flex;
-    justify-content: center;
-   
-  
-
-
-}
 
     }
 

@@ -1,0 +1,99 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+form{
+    background:linear-gradient(90deg,#0B4189, #fff,#FF1616);
+    padding: 100px;  
+    border-radius: 25px;
+    width: 1300px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    padding: 5px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 800px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    
+    
+  }
+
+.foot{
+  position: absolute;
+  z-index: 40;
+  height: 283px;
+  width: 337px ;
+  margin-left: 920px;
+  margin-top: 150px;
+
+}
+
+  .cycliste{
+    position: absolute;
+    z-index: 30;
+    height: 400px;
+    width: 260px;
+    margin-left: -80px ;
+    margin-top: 100px;
+  }
+
+  .carte{
+    position: absolute;
+    z-index: 20;
+    margin-left: 520px;
+    margin-top: -50px;
+    height: 73px;
+    width: 67px;
+  }
+
+  
+  h3{
+    text-align: center;
+    font-size:60px;
+    padding: 25px;
+    text-shadow: 5px 1px 1px #ccc;
+    color:#0B4189;
+  }
+
+button{
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    background:#0B4189;
+    color: #FFF;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button:hover{
+    background-color:#FF1616;
+    border-radius: 20px;
+    font-size: medium;
+}

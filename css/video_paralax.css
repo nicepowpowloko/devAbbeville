@@ -1,0 +1,78 @@
+
+
+/*    debut paralax   */
+
+
+h2 {
+  font-size: 125px;
+  
+}
+
+.section-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f2f2;
+    
+}
+
+
+button
+{
+    position: relative;
+    text-align: center;
+    width: 130px;
+    font-size: 0.8em;
+    height: 40px;
+    color: black;
+    font-weight: 400;
+    border: 2px solid rgb(241, 245, 5);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 1.5s;
+  
+}
+
+
+
+
+.parallax {
+  background-image: url("../img/diablo.jpg"); 
+  
+}
+
+.parallax1 {
+  background-image: url("../img/diablo.jpg");
+}
+
+.parallax2 {
+  background-image: url("../img/diablo.jpg");
+}
+
+.parallax3 {
+  background-image: url("../img/diablo.jpg");
+}
+
+.parallax4 {
+  background-image: url("../img/diablo.jpg");
+}
+
+
+.text-bloc p {
+  margin: 75px;
+  font-size: 22px;
+  color: #080808;
+}
+
+
+/*    fin paralax   */
